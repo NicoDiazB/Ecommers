@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f9f5ed;
+}
+
+button:hover {
+  background-color: #5a3220;
+  transition: all;
+  transition-duration: 500ms;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+
+.link-navbar {
+  @apply text-base font-bold text-soft-letter transition-all duration-300 hover:border-b-2 hover:border-secundary hover:text-secundary;
+}
+
+.input-style {
+  @apply w-[auto] rounded-lg border-2 border-primary bg-input-bg px-4 py-2 text-base font-normal text-primary placeholder-soft-letter focus:border-transparent focus:outline-none focus:ring-2 focus:ring-secundary;
+}
